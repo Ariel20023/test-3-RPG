@@ -64,6 +64,7 @@ class Game:
             damage = start.attack(start, other)
             if damage <= 0:
                 print(f"{other.name}Dead, game over")
+                return
             else:
                 start,other = other,start
 
